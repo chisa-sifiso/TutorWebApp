@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color: #ffff99">
+    <center>
+        <h1>Add Student</h1>
+        <form action="AddTutorServlet.do" method="POST" enctype="multipart/form-data">
+        
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>Photo:</td>
+                    <td><input type="file" name="photo" accept="image/*" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" value="" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="text" name="age" value="" required=""/></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><select name="gender" required="">
+                            <option></option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Stuff Number</td>
+                    <td><input type="text" name="id" value="" required="" /></td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td>
+                        <div id='subDiv'>
+                            <input type="text" name="subjects" value="" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button"  onclick="addSubject()" value="Add Another Subject" /></td>
+                </tr>
+                 <tr>
+                    <td>Date</td>
+                    <td><input type="text" name="date" value="" placeholder="yyyy-mm-dd" required=""/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Add Tutor" /></td>
+                </tr>
+            </tbody>
+        </table>
+      </form>
+        <script>
+            function addSubject(){
+                var subDiv = document.getElementById("subDiv");
+                    subDiv.appendChild(document.createElement("br"));
+                    subDiv.appendChild(document.createElement("br"));
+                var subElement = document.createElement("input");
+                    subElement.type="text";
+                    subElement.name="subjects";
+                    subElement.placeholder="Subject Name";
+                subDiv.appendChild(subElement); 
+                
+            }
+            
+        </script>    
+    </center>
+    </body>
+</html>
