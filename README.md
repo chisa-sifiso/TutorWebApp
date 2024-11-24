@@ -1,7 +1,7 @@
 
 
    
-  <title>README - Tutor Web Application</title>
+
 
 
 <body>
@@ -26,7 +26,6 @@
 
   <h2>Installation</h2>
   <ol>
-      <li>Clone the repository: <code>git clone <repository-url></code></li>
       <li>Set up the database using the provided SQL scripts.</li>
       <li>Deploy the application on a Java EE compatible server.</li>
   </ol>
