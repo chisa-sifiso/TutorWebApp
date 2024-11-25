@@ -42,6 +42,8 @@
 
   <h2>Contributing</h2>
   <p>Feel free to submit issues or pull requests for any enhancements or bug fixes.</p>
+   <h2>Contact</h2>
+  <p>sifisovinjwa1@gmial.com</p>
 
   <h2>License</h2>
   <p>This project is licensed under the MIT License.</p>
